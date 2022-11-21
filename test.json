@@ -1,0 +1,19 @@
+{
+  "rules": [
+    {
+      "destinations": [
+        {
+          "region": "us-east-1",
+          "registryId": "611181293678"
+        }
+      ],
+      "repositoryFilters": [
+        {
+          "filter": "mlops",
+          "filterType": "PREFIX_MATCH"
+        }
+      ]
+    }
+  ]
+}
+
