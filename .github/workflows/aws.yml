@@ -35,7 +35,7 @@ jobs:
       - name: see pull_request_target
         env:
           EVENT_CONTEXT: ${{ toJSON(github.event) }}
-        run: echo $EVENT_CONTEXT
+        run: echo $EVENT_CONTEXT | jq .
     
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
