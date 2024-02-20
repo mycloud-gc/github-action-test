@@ -43,7 +43,7 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha }}
 
       - name: ls root
-        run: ls -l .
+        run: pwd && ls -l .
       
       - name: configure aws-cn credentials
         uses: aws-actions/configure-aws-credentials@v1
